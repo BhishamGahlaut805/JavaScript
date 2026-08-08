@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>DOM Manipulation Example</h1>
+
+    <p id="text" style="color: blue;">This is the original text.</p>
+    <p  class="allApply" style="color: red;">Apply ALL.</p>
+    <p class="allApply" style="color: green;">Apply ALL.</p>
+    <p class="allApply" style="color: orange;">Apply ALL.</p>
+    <p class="allApply" style="color: purple;">Apply ALL.</p>
+    <p class="allApply" style="color: pink;">Apply ALL.</p>
+    <p class="allApply" style="color: brown;">Apply ALL.</p>
+    <p class="allApply" style="color: black;">Apply ALL.</p>
+    <p class="allApply" style="color: gray;">Apply ALL.</p>
+    <p class="allApply" style="color: lightblue;">Apply ALL.</p>
+    <p class="allApply" style="color: lightgreen;">Apply ALL.</p>
+    <p class="allApply" style="color: lightcoral;   ">Apply ALL.</p>
+
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <button id="changeTextBtn">Update Text</button>
+    <br>
+    <br>
+
+    <div id="container" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">
+        <span id="counter">0</span>
+    </div>
+    <br>
+    <div style="display: flex; gap: 10px;">
+    <button id="incrementBtn">Increment</button>
+    <button id="decrementBtn">Decrement</button>
+    </div>
+
+    <h1>DOM Manipulation Example - Append Child</h1>
+
+    <div id="parentDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;display:flex; flex-direction: column; align-items: center;">
+        <div class="child" style="border: 1px solid rgb(45, 112, 78); padding: 5px; margin: 5px;">Child 1</div>
+        <div class="child" style="border: 1px solid gray; padding: 5px; margin: 5px;">Child 2</div>
+
+    </div>
+
+    <button id="addChildBtn">Add Child</button>
+    <h2>DOM Manipulation Example - Append Positions</h2>
+    <div id="parentDiv2" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;display:flex; flex-direction: column; align-items: center;">
+        <div class="child" style="border: 1px solid rgb(45, 112, 78); padding: 5px; margin: 5px;">Child 1</div>
+        <div class="child" style="border: 1px solid gray; padding: 5px; margin: 5px;">Child 2</div>
+    </div>
+    <button id="addChildBtn1">Add Child at First Position</button>
+
+
+    <h1>DOM Manipulation Example -Event Listeners</h1>
+
+    <div style="display: flex; gap: 10px;">
+        <div id="hoverDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">Hover over me!</div>
+        <div id="clickDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">Click me!</div>
+        <div id="dblClickDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">Double Click me!</div>
+        <div id="mouseDownDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">Mouse Down on me!</div>
+        <div id="mouseUpDiv" style="border: 1px solid black; padding: 10px; width: 200px; text-align: center;">Mouse Up on me!</div>
+    </div>
+
+    <h1>DOM Manipulation Example - Insert data in Table</h1>
+
+    <table id="dataTable" border="1" style="border-collapse: collapse; width: 50%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h2>Insert New Row</h2>
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="number" id="ageInput" placeholder="Age">
+    <input type="text" id="cityInput" placeholder="City">
+    <br><br>
+    <button id="insertRowBtn">Insert Row</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
