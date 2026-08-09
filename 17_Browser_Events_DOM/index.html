@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and DOM</title>
+</head>
+<body>
+    <h1>Events and DOM</h1>
+    <button id="myButton">Click Me!</button>
+    <p id="myParagraph">This is a paragraph.</p>
+
+    <h1 style="color: green;">Login Setup</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit" >Login</button>
+    </form>
+    <br><br>
+    <div id="loginMessage"></div>
+    <br><br>
+
+    <h1 style="color: blue;">Events targets</h1>
+    <div id="parentDiv" style="border: 1px solid black; padding: 20px;">
+        Parent Div
+        <div id="childDiv" style="border: 1px solid red; padding: 20px; margin-top: 10px;">
+            Child Div
+            <button id="childButton">Click Me!</button>
+        </div>
+        <br>
+        <button id="parentButton">Click Me!</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
